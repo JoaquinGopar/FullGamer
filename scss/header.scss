@@ -1,0 +1,119 @@
+header{
+    .cabecera{
+        display: flex;
+        padding: 0.5rem;
+        justify-content: space-around;
+        background-color: black;
+        align-items: center;
+
+        .logo{
+            img{
+                width: 5.5rem;
+            }
+    
+            img:hover{
+                transform: scale(1.2);
+                transition: 500ms;
+            }
+        }
+
+        .busqueda{
+            display: flex;
+            
+            input{
+                width: 20rem;
+                height: 2.5rem;
+                border-top-left-radius: 0.5rem;
+                border-bottom-left-radius: 0.5rem;
+                border: 3px solid rgb(1, 73, 19);
+            }
+            
+            button{
+                border-top-right-radius: 0.5rem;
+                border-bottom-right-radius: 0.5rem;
+                border: 3px solid rgb(1, 73, 19);
+            }
+
+            input:focus{
+                box-shadow: 0 0 15px rgb(1, 73, 19);
+                border: 3px solid rgb(1, 73, 19);;
+            }
+        }
+
+        .busqueda:hover{
+            box-shadow: 0 0 15px rgb(1, 73, 19);
+        }
+
+        .sesion{
+            display: flex;
+            button{
+                display: flex;
+                background-color: black;
+                border-radius: 0.5rem;
+                width: auto;
+                border: 3px solid rgb(1, 73, 19);
+                a{
+                    text-decoration: none;
+                    color: white;
+                    font-size: 1.2rem;
+                }
+
+                #logo{
+                    margin-right: 0.3rem;
+                }
+            }
+
+            button:hover{
+                transform: scale(1.05);
+                transition: 300ms;
+                box-shadow: 0 0 15px rgb(1, 73, 19);
+            }
+
+            .carro{
+                width: 2.5rem;
+                background-color: black;
+                margin-left: 2rem;
+                text-align: center;
+                border-radius: 0.5rem;
+
+                button{
+                    a{
+                        font-size: 1.2rem;
+                        color: white;
+                        font-weight: bold;
+    
+                        i{
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+
+            .carro:hover{
+                transform: scale(1.05);
+                transition: 300ms;
+                box-shadow: 0 0 15px rgb(1, 73, 19);
+            }
+        }
+    }
+
+    .secciones{
+        display: flex;
+        justify-content: space-around;
+        padding: 0.8rem 0 0.8rem 0;
+        background-color: black;
+        border-top: 3px solid rgb(1, 73, 19);
+        border-bottom: 3px solid rgb(1, 73, 19);
+        
+        a{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+
+            
+        }
+        :hover{
+            color: rgba(2, 149, 39, 0.587);
+        }
+    }
+}

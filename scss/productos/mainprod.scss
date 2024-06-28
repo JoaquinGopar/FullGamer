@@ -1,0 +1,134 @@
+header{
+    .secciones{
+        .productos{
+            pointer-events: none;
+            color: rgba(2, 149, 39, 0.587);
+        }
+    }
+}
+
+.mainProd{
+    .pie{
+        width: 85%;
+        margin-left: 4rem;
+        border-bottom: 2px solid black;
+        margin-top: 2rem;
+    }
+
+    .prod{
+        margin-top: 2rem;
+        height: 80rem;
+        display: grid;
+        grid-template-columns: 450px 1fr;
+        grid-template-rows: 1fr;
+        
+        .acordeones{
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+            .accordion{
+                width: 350px;
+                grid-column: 1;
+                border: 1px solid rgb(1, 73, 19);
+                border-radius: 6px;
+
+                a{
+                    text-decoration: none;
+                    color: black;
+                    font-weight: 400;
+                }
+                a:hover{
+                    color: rgb(1, 73, 19);
+                }
+            }
+    
+            .filtro{
+                margin-top: 2rem;
+                grid-column: 1;
+            }
+        }
+
+        .contenedor{
+            grid-row: 1;
+            grid-column: 2;
+            background-color: white;
+            width: 84%;
+            height: 52px;
+            margin-left: 1rem;
+            border-radius: 8px;
+            border: 1px solid rgb(1, 73, 19);
+
+            select{
+                margin-top: 0.8rem;
+                margin-left: 3rem;
+                border: none;
+                border-bottom: 1px solid black;
+            }
+
+            .prodDestacados{
+                margin-top: 3.2rem;
+
+                .prod1{
+                    display: flex;
+                    background-color: white;
+                    border: 1px solid rgb(1, 73, 19);
+                    border-radius: 8px;
+                    height: 10rem;
+                    box-shadow: 0 0 4px rgb(1, 73, 19);
+                    img{
+                        padding-top: 30px;
+                        margin-left: 2rem;
+                    }
+                    
+                    .texto{
+                        margin-left: 2rem;
+                        margin-top: 1rem;
+
+                        .precio{
+                            color: rgb(1, 73, 19);
+                        }
+
+                        .btncompra{
+                            margin-top: 1rem;
+                            button{
+                                margin-right: 1rem;
+                                border-radius: 5px;
+                                background-color: black;
+                                border: 3px solid rgb(1, 73, 19);
+                                box-shadow: 0 0 5px rgb(1, 73, 19);
+                                p{
+                                    padding: 4px 30px 4px 30px;
+                                    margin: 0;
+                                    color: white;
+                                    font-weight: 600;
+                                }
+                            }
+
+                            button:hover{
+                                transform: scale(1.02);
+                                transition: 300ms
+                            }
+                        }
+                    }
+                }
+
+                .prod2{
+                    @extend .prod1;
+                    margin-top: 1rem;
+                }
+
+                .prod3{
+                    @extend .prod2;
+                }
+
+                .prod4{
+                    @extend .prod2;
+                }
+
+                .prod5{
+                    @extend .prod2;
+                }
+            }
+        }
+    }
+}

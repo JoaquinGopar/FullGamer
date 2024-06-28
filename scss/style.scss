@@ -1,0 +1,27 @@
+//Global
+
+@use "header";
+
+@use "footer";
+
+//Index
+
+@use "index/mainindex";
+
+//Productos
+
+@use "productos/mainprod";
+
+//Pc Armadas
+
+@use "pcarmadas/mainpcarm";
+
+//Arma PC
+
+@use "armapc/mainarmapc";
+
+@use "armapc/footerarmapc";
+
+//Ayuda
+
+@use "ayuda/mainayuda";

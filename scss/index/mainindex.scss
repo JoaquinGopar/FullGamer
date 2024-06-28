@@ -1,0 +1,51 @@
+body{
+    margin: 0;
+    padding: 0;
+    
+}
+
+.mainIndex{
+    .ultnovedades{
+        margin-top: 4rem;
+        margin-bottom: 5rem;
+        
+        .titulo{
+            width: 85%;
+            margin-left: 4rem;
+            border-bottom: 2px solid black;
+        }
+
+        .productos{
+            margin-top: 1rem;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 1rem;
+
+            .card{
+                border: 2px solid black;
+            }
+
+            .card:hover{
+                cursor: pointer;
+                transform: scale(1.02);
+                transition: 300ms;
+            }
+        }
+
+        .vermas{
+            margin-top: 1rem;
+            text-align: center;
+            button{
+                background-color: #E0DDDD;
+                border: none;
+                color: black;
+                font-weight: bold;
+            }
+        }
+    }
+
+    .ultingresos{
+        @extend .ultnovedades;
+    }
+}

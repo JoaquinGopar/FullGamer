@@ -1,0 +1,78 @@
+header{
+    .secciones{
+        .pcarmadas{
+            pointer-events: none;
+            color: rgba(2, 149, 39, 0.587);
+        }
+    }
+}
+
+.PcArmadas{
+    .seleccion{
+        display: flex;
+        justify-content: center;
+        margin-top: 2rem;
+        gap: 4rem;
+        .pcgamers{
+            button{
+                font-size: 1.4rem;
+                font-weight: 500;
+                width: 25rem;
+                padding: 4px 0 4px 0;
+                border-radius: 8px;
+                border: 2px solid rgb(1, 73, 19);
+                box-shadow: 0 0 3px rgb(1, 73, 19);
+            }
+            button:hover{
+                transform: scale(1.03);
+                transition: 300ms;
+            }
+        }
+
+        .pchogar{
+            @extend .pcgamers;
+        }
+    }
+
+    .productos{
+        display: flex;
+        justify-content: center;
+        margin: 4rem 5.5rem 0 5.5rem;
+        flex-wrap: wrap;
+        gap: 1rem;
+        margin-bottom: 4rem;
+
+        .card{
+            border: 2px solid black;
+        }
+
+        .card:hover{
+            cursor: pointer;
+            transform: scale(1.02);
+            transition: 300ms;
+        }
+    }
+
+    .subir{
+        position: fixed;
+        right: 20px;
+        z-index: 1;
+        bottom: 1.25rem;
+        background-color: white;
+        width: 3rem;
+        text-align: center;
+        border: 2px solid rgb(1, 73, 19);
+        border-radius: 4px;
+        box-shadow: 0 0 4px rgb(1, 73, 19);
+
+        i{
+            font-size: 2rem;
+            font-weight: bold;
+            color: black;
+        }
+    }
+    .subir:hover{
+        transform: scale(1.01);
+        transition: 300ms;
+    }
+}

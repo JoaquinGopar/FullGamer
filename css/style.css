@@ -1,0 +1,509 @@
+header .cabecera {
+  display: flex;
+  padding: 0.5rem;
+  justify-content: space-around;
+  background-color: black;
+  align-items: center;
+}
+header .cabecera .logo img {
+  width: 5.5rem;
+}
+header .cabecera .logo img:hover {
+  transform: scale(1.2);
+  transition: 500ms;
+}
+header .cabecera .busqueda {
+  display: flex;
+}
+header .cabecera .busqueda input {
+  width: 20rem;
+  height: 2.5rem;
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  border: 3px solid rgb(1, 73, 19);
+}
+header .cabecera .busqueda button {
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  border: 3px solid rgb(1, 73, 19);
+}
+header .cabecera .busqueda input:focus {
+  box-shadow: 0 0 15px rgb(1, 73, 19);
+  border: 3px solid rgb(1, 73, 19);
+}
+header .cabecera .busqueda:hover {
+  box-shadow: 0 0 15px rgb(1, 73, 19);
+}
+header .cabecera .sesion {
+  display: flex;
+}
+header .cabecera .sesion button {
+  display: flex;
+  background-color: black;
+  border-radius: 0.5rem;
+  width: auto;
+  border: 3px solid rgb(1, 73, 19);
+}
+header .cabecera .sesion button a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+}
+header .cabecera .sesion button #logo {
+  margin-right: 0.3rem;
+}
+header .cabecera .sesion button:hover {
+  transform: scale(1.05);
+  transition: 300ms;
+  box-shadow: 0 0 15px rgb(1, 73, 19);
+}
+header .cabecera .sesion .carro {
+  width: 2.5rem;
+  background-color: black;
+  margin-left: 2rem;
+  text-align: center;
+  border-radius: 0.5rem;
+}
+header .cabecera .sesion .carro button a {
+  font-size: 1.2rem;
+  color: white;
+  font-weight: bold;
+}
+header .cabecera .sesion .carro button a i {
+  margin: 0;
+}
+header .cabecera .sesion .carro:hover {
+  transform: scale(1.05);
+  transition: 300ms;
+  box-shadow: 0 0 15px rgb(1, 73, 19);
+}
+header .secciones {
+  display: flex;
+  justify-content: space-around;
+  padding: 0.8rem 0 0.8rem 0;
+  background-color: black;
+  border-top: 3px solid rgb(1, 73, 19);
+  border-bottom: 3px solid rgb(1, 73, 19);
+}
+header .secciones a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+header .secciones :hover {
+  color: rgba(2, 149, 39, 0.587);
+}
+
+.footer {
+  background-color: black;
+  border-top: 3px solid rgb(1, 73, 19);
+}
+.footer .container .row {
+  color: white;
+}
+.footer .container .row .col-6 ul {
+  text-decoration: none;
+  list-style: none;
+  padding: 0;
+}
+.footer .container .row .col-6 ul a {
+  color: white;
+  text-decoration: none;
+}
+.footer .container .row .col-6 ul a:hover {
+  color: rgb(1, 73, 19);
+}
+.footer .container .row .form {
+  margin-left: 4rem;
+}
+.footer .container .row .form .titulo {
+  color: white;
+  text-align: center;
+  margin-bottom: 1rem;
+  padding-top: 1rem;
+}
+.footer .container .row .form .email {
+  display: flex;
+  justify-content: center;
+}
+.footer .container .row .form .email input {
+  width: 25rem;
+  height: 2.8rem;
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  border: 3px solid rgb(1, 73, 19);
+}
+.footer .container .row .form .email button {
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  border: 3px solid rgb(1, 73, 19);
+}
+.footer .container .row .form .email input:hover {
+  box-shadow: 0 0 20px rgb(1, 73, 19);
+}
+.footer .container .row .form .email input:focus {
+  box-shadow: 0 0 20px rgb(1, 73, 19);
+}
+.footer .container .row .form .email button:hover {
+  box-shadow: 0 0 20px rgb(1, 73, 19);
+}
+.footer .social {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  padding-bottom: 4rem;
+  justify-content: space-between;
+  border-top: 2px solid rgb(1, 73, 19);
+  padding-top: 1rem;
+}
+.footer .social .desarrollador {
+  color: white;
+}
+.footer .social .wrapper .button {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  float: right;
+  margin: 0 5px;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-out;
+}
+.footer .social .wrapper .button .icon {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  border-radius: 50px;
+  box-sizing: border-box;
+  line-height: 40px;
+}
+.footer .social .wrapper .button .icon a {
+  text-decoration: none;
+  color: black;
+}
+.footer .social .wrapper .button .icon a i {
+  font-size: 18px;
+  line-height: 40px;
+}
+.footer .social .wrapper .button a {
+  text-decoration: none;
+}
+.footer .social .wrapper .button a span {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 40px;
+  margin-left: 10px;
+}
+.footer .social .wrapper .button:hover {
+  width: 160px;
+}
+.footer .social .wrapper .button:nth-child(1):hover .icon {
+  background: #4267b2;
+}
+.footer .social .wrapper .button:nth-child(2):hover .icon {
+  background: #1da1f2;
+}
+.footer .social .wrapper .button:nth-child(3):hover .icon {
+  background: #e1306c;
+}
+.footer .social .wrapper .button:nth-child(4):hover .icon {
+  background: #ff0000;
+}
+.footer .social .wrapper .button:nth-child(1) span {
+  color: #4267b2;
+}
+.footer .social .wrapper .button:nth-child(2) span {
+  color: #1da1f2;
+}
+.footer .social .wrapper .button:nth-child(3) span {
+  color: #e1306c;
+}
+.footer .social .wrapper .button:nth-child(4) span {
+  color: #ff0000;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.mainIndex .ultnovedades, .mainIndex .ultingresos {
+  margin-top: 4rem;
+  margin-bottom: 5rem;
+}
+.mainIndex .ultnovedades .titulo, .mainIndex .ultingresos .titulo {
+  width: 85%;
+  margin-left: 4rem;
+  border-bottom: 2px solid black;
+}
+.mainIndex .ultnovedades .productos, .mainIndex .ultingresos .productos {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.mainIndex .ultnovedades .productos .card, .mainIndex .ultingresos .productos .card {
+  border: 2px solid black;
+}
+.mainIndex .ultnovedades .productos .card:hover, .mainIndex .ultingresos .productos .card:hover {
+  cursor: pointer;
+  transform: scale(1.02);
+  transition: 300ms;
+}
+.mainIndex .ultnovedades .vermas, .mainIndex .ultingresos .vermas {
+  margin-top: 1rem;
+  text-align: center;
+}
+.mainIndex .ultnovedades .vermas button, .mainIndex .ultingresos .vermas button {
+  background-color: #E0DDDD;
+  border: none;
+  color: black;
+  font-weight: bold;
+}
+header .secciones .productos {
+  pointer-events: none;
+  color: rgba(2, 149, 39, 0.587);
+}
+
+.mainProd .pie {
+  width: 85%;
+  margin-left: 4rem;
+  border-bottom: 2px solid black;
+  margin-top: 2rem;
+}
+.mainProd .prod {
+  margin-top: 2rem;
+  height: 80rem;
+  display: grid;
+  grid-template-columns: 450px 1fr;
+  grid-template-rows: 1fr;
+}
+.mainProd .prod .acordeones {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+.mainProd .prod .acordeones .accordion {
+  width: 350px;
+  grid-column: 1;
+  border: 1px solid rgb(1, 73, 19);
+  border-radius: 6px;
+}
+.mainProd .prod .acordeones .accordion a {
+  text-decoration: none;
+  color: black;
+  font-weight: 400;
+}
+.mainProd .prod .acordeones .accordion a:hover {
+  color: rgb(1, 73, 19);
+}
+.mainProd .prod .acordeones .filtro {
+  margin-top: 2rem;
+  grid-column: 1;
+}
+.mainProd .prod .contenedor {
+  grid-row: 1;
+  grid-column: 2;
+  background-color: white;
+  width: 84%;
+  height: 52px;
+  margin-left: 1rem;
+  border-radius: 8px;
+  border: 1px solid rgb(1, 73, 19);
+}
+.mainProd .prod .contenedor select {
+  margin-top: 0.8rem;
+  margin-left: 3rem;
+  border: none;
+  border-bottom: 1px solid black;
+}
+.mainProd .prod .contenedor .prodDestacados {
+  margin-top: 3.2rem;
+}
+.mainProd .prod .contenedor .prodDestacados .prod1, .mainProd .prod .contenedor .prodDestacados .prod2, .mainProd .prod .contenedor .prodDestacados .prod5, .mainProd .prod .contenedor .prodDestacados .prod4, .mainProd .prod .contenedor .prodDestacados .prod3 {
+  display: flex;
+  background-color: white;
+  border: 1px solid rgb(1, 73, 19);
+  border-radius: 8px;
+  height: 10rem;
+  box-shadow: 0 0 4px rgb(1, 73, 19);
+}
+.mainProd .prod .contenedor .prodDestacados .prod1 img, .mainProd .prod .contenedor .prodDestacados .prod2 img, .mainProd .prod .contenedor .prodDestacados .prod5 img, .mainProd .prod .contenedor .prodDestacados .prod4 img, .mainProd .prod .contenedor .prodDestacados .prod3 img {
+  padding-top: 30px;
+  margin-left: 2rem;
+}
+.mainProd .prod .contenedor .prodDestacados .prod1 .texto, .mainProd .prod .contenedor .prodDestacados .prod2 .texto, .mainProd .prod .contenedor .prodDestacados .prod5 .texto, .mainProd .prod .contenedor .prodDestacados .prod4 .texto, .mainProd .prod .contenedor .prodDestacados .prod3 .texto {
+  margin-left: 2rem;
+  margin-top: 1rem;
+}
+.mainProd .prod .contenedor .prodDestacados .prod1 .texto .precio, .mainProd .prod .contenedor .prodDestacados .prod2 .texto .precio, .mainProd .prod .contenedor .prodDestacados .prod5 .texto .precio, .mainProd .prod .contenedor .prodDestacados .prod4 .texto .precio, .mainProd .prod .contenedor .prodDestacados .prod3 .texto .precio {
+  color: rgb(1, 73, 19);
+}
+.mainProd .prod .contenedor .prodDestacados .prod1 .texto .btncompra, .mainProd .prod .contenedor .prodDestacados .prod2 .texto .btncompra, .mainProd .prod .contenedor .prodDestacados .prod5 .texto .btncompra, .mainProd .prod .contenedor .prodDestacados .prod4 .texto .btncompra, .mainProd .prod .contenedor .prodDestacados .prod3 .texto .btncompra {
+  margin-top: 1rem;
+}
+.mainProd .prod .contenedor .prodDestacados .prod1 .texto .btncompra button, .mainProd .prod .contenedor .prodDestacados .prod2 .texto .btncompra button, .mainProd .prod .contenedor .prodDestacados .prod5 .texto .btncompra button, .mainProd .prod .contenedor .prodDestacados .prod4 .texto .btncompra button, .mainProd .prod .contenedor .prodDestacados .prod3 .texto .btncompra button {
+  margin-right: 1rem;
+  border-radius: 5px;
+  background-color: black;
+  border: 3px solid rgb(1, 73, 19);
+  box-shadow: 0 0 5px rgb(1, 73, 19);
+}
+.mainProd .prod .contenedor .prodDestacados .prod1 .texto .btncompra button p, .mainProd .prod .contenedor .prodDestacados .prod2 .texto .btncompra button p, .mainProd .prod .contenedor .prodDestacados .prod5 .texto .btncompra button p, .mainProd .prod .contenedor .prodDestacados .prod4 .texto .btncompra button p, .mainProd .prod .contenedor .prodDestacados .prod3 .texto .btncompra button p {
+  padding: 4px 30px 4px 30px;
+  margin: 0;
+  color: white;
+  font-weight: 600;
+}
+.mainProd .prod .contenedor .prodDestacados .prod1 .texto .btncompra button:hover, .mainProd .prod .contenedor .prodDestacados .prod2 .texto .btncompra button:hover, .mainProd .prod .contenedor .prodDestacados .prod5 .texto .btncompra button:hover, .mainProd .prod .contenedor .prodDestacados .prod4 .texto .btncompra button:hover, .mainProd .prod .contenedor .prodDestacados .prod3 .texto .btncompra button:hover {
+  transform: scale(1.02);
+  transition: 300ms;
+}
+.mainProd .prod .contenedor .prodDestacados .prod2, .mainProd .prod .contenedor .prodDestacados .prod5, .mainProd .prod .contenedor .prodDestacados .prod4, .mainProd .prod .contenedor .prodDestacados .prod3 {
+  margin-top: 1rem;
+}
+header .secciones .pcarmadas {
+  pointer-events: none;
+  color: rgba(2, 149, 39, 0.587);
+}
+
+.PcArmadas .seleccion {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  gap: 4rem;
+}
+.PcArmadas .seleccion .pcgamers button, .PcArmadas .seleccion .pchogar button {
+  font-size: 1.4rem;
+  font-weight: 500;
+  width: 25rem;
+  padding: 4px 0 4px 0;
+  border-radius: 8px;
+  border: 2px solid rgb(1, 73, 19);
+  box-shadow: 0 0 3px rgb(1, 73, 19);
+}
+.PcArmadas .seleccion .pcgamers button:hover, .PcArmadas .seleccion .pchogar button:hover {
+  transform: scale(1.03);
+  transition: 300ms;
+}
+.PcArmadas .productos {
+  display: flex;
+  justify-content: center;
+  margin: 4rem 5.5rem 0 5.5rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 4rem;
+}
+.PcArmadas .productos .card {
+  border: 2px solid black;
+}
+.PcArmadas .productos .card:hover {
+  cursor: pointer;
+  transform: scale(1.02);
+  transition: 300ms;
+}
+.PcArmadas .subir {
+  position: fixed;
+  right: 20px;
+  z-index: 1;
+  bottom: 1.25rem;
+  background-color: white;
+  width: 3rem;
+  text-align: center;
+  border: 2px solid rgb(1, 73, 19);
+  border-radius: 4px;
+  box-shadow: 0 0 4px rgb(1, 73, 19);
+}
+.PcArmadas .subir i {
+  font-size: 2rem;
+  font-weight: bold;
+  color: black;
+}
+.PcArmadas .subir:hover {
+  transform: scale(1.01);
+  transition: 300ms;
+}
+
+header .secciones .armapc {
+  pointer-events: none;
+  color: rgba(2, 149, 39, 0.587);
+}
+
+header .secciones .ayuda {
+  pointer-events: none;
+  color: rgba(2, 149, 39, 0.587);
+}
+
+.mainAyuda .container .contacto {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+  text-align: center;
+  color: white;
+}
+.mainAyuda .container .contacto .atenciontel {
+  background-color: rgb(1, 73, 19);
+  width: 25rem;
+  padding: 10px;
+  border: 3px solid black;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgb(1, 73, 19);
+}
+.mainAyuda .container .contacto .atenciontel h5 {
+  margin-top: 20px;
+}
+.mainAyuda .container .contacto .atenciontel .numero {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  font-size: 1.15rem;
+}
+.mainAyuda .container .contacto .atenciononline {
+  background-color: rgb(1, 73, 19);
+  width: 25rem;
+  padding: 10px;
+  border: 3px solid black;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgb(1, 73, 19);
+}
+.mainAyuda .container .contacto .atenciononline h5 {
+  margin-top: 20px;
+}
+.mainAyuda .container .contacto .atenciononline .correo {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  font-size: 1.15rem;
+}
+.mainAyuda .container .contacto .horariosaten {
+  background-color: rgb(1, 73, 19);
+  width: 25rem;
+  padding: 10px;
+  border: 3px solid black;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgb(1, 73, 19);
+}
+.mainAyuda .container .contacto .horariosaten p {
+  margin: 0;
+  font-size: 1.15rem;
+}
+.mainAyuda .container .preguntas h3 {
+  border-bottom: 2px solid black;
+}
+.mainAyuda .container .preguntas .precio, .mainAyuda .container .preguntas .envio, .mainAyuda .container .preguntas .pagos, .mainAyuda .container .preguntas .pedido {
+  margin-top: 1rem;
+  background-color: rgb(1, 73, 19);
+  color: white;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 4px;
+  box-shadow: 0 0 2px rgb(1, 73, 19);
+}
+
+/*# sourceMappingURL=style.css.map */

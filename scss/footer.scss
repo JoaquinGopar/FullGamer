@@ -1,0 +1,179 @@
+.footer{
+    background-color: black;
+    border-top: 3px solid rgb(1, 73, 19);
+    .container{
+        .row{
+            color: white;
+            .col-6{
+                ul{
+                    text-decoration: none;
+                    list-style: none;
+                    padding: 0;
+                    a{
+                        color: white;
+                        text-decoration: none;
+                    }
+                    a:hover{
+                        color: rgb(1, 73, 19);
+                    }
+                }
+                
+            }
+
+            .form{
+                margin-left: 4rem;
+                .titulo{
+                    color: white;
+                    text-align: center;
+                    margin-bottom: 1rem;
+                    padding-top: 1rem;
+                }
+                .email{
+                    display: flex;
+                    justify-content: center;
+        
+                    input{
+                        width: 25rem;
+                        height: 2.8rem;
+                        border-top-left-radius: 0.5rem;
+                        border-bottom-left-radius: 0.5rem;
+                        border: 3px solid rgb(1, 73, 19);
+                    }
+        
+                    button{
+                        border-top-right-radius: 0.5rem;
+                        border-bottom-right-radius: 0.5rem;
+                        border: 3px solid rgb(1, 73, 19);
+                    }
+        
+                    input:hover{
+                        box-shadow: 0 0 20px rgb(1, 73, 19);
+                    }
+        
+                    input:focus{
+                        box-shadow: 0 0 20px rgb(1, 73, 19);
+                    }
+        
+                    button:hover{
+                        box-shadow: 0 0 20px rgb(1, 73, 19);
+                    }
+                }
+            }
+        }
+        
+        
+    }
+
+    .social{
+        display: flex;
+        height: 100%;
+        width: 100%;
+        padding-bottom: 4rem;
+        justify-content: space-between;
+        border-top: 2px solid rgb(1, 73, 19);
+        padding-top: 1rem;
+
+        .desarrollador{
+            color: white;
+        }
+
+        .wrapper{
+            .button{
+                display: inline-block;
+                height: 40px;
+                width: 40px;
+                float: right;
+                margin: 0 5px;
+                overflow: hidden;
+                background: #fff;
+                border-radius: 50px;
+                cursor: pointer;
+                box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+                transition: all 0.3s ease-out;
+
+                .icon{
+                    display: inline-block;
+                    height: 40px;
+                    width: 40px;
+                    text-align: center;
+                    border-radius: 50px;
+                    box-sizing: border-box;
+                    line-height: 40px;
+
+                    a{
+                        text-decoration: none;
+                        color: black;
+                        i{
+                            font-size: 18px;
+                            line-height: 40px;
+                        }
+                    }
+                }
+
+                a{
+                    text-decoration: none;
+                    span{
+                        font-size: 20px;
+                        font-weight: 500;
+                        line-height: 40px;
+                        margin-left: 10px;
+                    }
+                }
+            }
+
+            .button:hover{
+                width: 160px;
+            }
+
+            .button:nth-child(1):hover{
+                .icon{
+                    background: #4267b2;
+                }
+            }
+
+            .button:nth-child(2):hover{
+                .icon{
+                    background: #1da1f2;
+                }
+            }
+
+            .button:nth-child(3):hover{
+                .icon{
+                    background: #e1306c;
+                }
+            }
+
+            .button:nth-child(4):hover{
+                .icon{
+                    background: #ff0000;
+                }
+            }
+
+            .button:nth-child(1){
+                span{
+                    color:#4267b2;
+                }
+            }
+
+            .button:nth-child(2){
+                span{
+                    color: #1da1f2;
+                }
+            }
+
+            .button:nth-child(3){
+                span{
+                    color: #e1306c;
+                }
+            }
+
+            .button:nth-child(4){
+                span{
+                    color: #ff0000;
+                }
+            }
+        }
+
+    }
+
+}
